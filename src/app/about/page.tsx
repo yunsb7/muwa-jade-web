@@ -10,17 +10,17 @@ export default function AboutPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh]">
+      <section className="relative h-[40vh]">
         <Image
           src="/images/about-hero.jpg"
-          alt="MUWA JADE 브랜드"
+          alt="MUWA JADE 브랜드 소개"
           fill
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">MUWA JADE</h1>
-            <p className="text-xl md:text-2xl">자연 속 프라이빗 휴식</p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">브랜드 소개</h1>
+            <p className="text-xl md:text-2xl">MUWA JADE의 특별한 이야기</p>
           </div>
         </div>
       </section>
@@ -28,23 +28,28 @@ export default function AboutPage() {
       {/* Brand Story */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">브랜드 스토리</h2>
-          <div className="max-w-3xl mx-auto space-y-8">
-            <p className="text-lg leading-relaxed">
-              MUWA의 철학, '자연 속 프라이빗 휴식'을 담은 브랜드 스토리.
-              아트 & 라이프의 융합, 지속가능한 자연 친화적 공간 철학.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold">자연과의 조화</h3>
-                <p className="text-gray-600">
-                  제이드가든과 어우러진 프라이빗한 공간에서 자연의 에너지를 느끼세요.
-                </p>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">브랜드 스토리</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="relative h-[400px] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/brand-story.jpg"
+                  alt="브랜드 스토리"
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold">예술적 영감</h3>
+              <div>
+                <p className="text-gray-600 mb-6">
+                  MUWA JADE는 2025년 준공 예정인 프라이빗 빌리지입니다. 
+                  제이드팰리스 골프클럽 내에 위치한 이곳은 자연과 조화를 이루는 
+                  럭셔리한 라이프스타일을 제공합니다.
+                </p>
                 <p className="text-gray-600">
-                  아트 갤러리와 문화 프로그램을 통해 일상 속 예술적 영감을 얻으세요.
+                  &quot;MUWA&quot;는 &quot;Mountain&quot;과 &quot;Water&quot;의 조합으로, 
+                  산과 물이 어우러진 자연의 아름다움을 상징합니다. 
+                  &quot;JADE&quot;는 귀중한 보석을 의미하며, 
+                  우리의 프리미엄 서비스와 시설을 나타냅니다.
                 </p>
               </div>
             </div>
@@ -57,20 +62,26 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">브랜드 가치</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="text-4xl mb-4">🌿</div>
-              <h3 className="text-xl font-bold mb-2">자연 친화</h3>
-              <p className="text-gray-600">지속가능한 자연과의 공존</p>
+              <h3 className="text-xl font-bold mb-4">자연과의 조화</h3>
+              <p className="text-gray-600">
+                자연과 함께하는 지속 가능한 라이프스타일을 추구합니다.
+              </p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-xl font-bold mb-2">예술적 가치</h3>
-              <p className="text-gray-600">아트 & 라이프의 융합</p>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="text-4xl mb-4">✨</div>
+              <h3 className="text-xl font-bold mb-4">프리미엄 서비스</h3>
+              <p className="text-gray-600">
+                최고의 시설과 서비스로 특별한 경험을 제공합니다.
+              </p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl mb-4">🌟</div>
-              <h3 className="text-xl font-bold mb-2">프리미엄</h3>
-              <p className="text-gray-600">최고급 서비스와 시설</p>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-bold mb-4">커뮤니티</h3>
+              <p className="text-gray-600">
+                소중한 사람들과 함께하는 특별한 순간을 만듭니다.
+              </p>
             </div>
           </div>
         </div>

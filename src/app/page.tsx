@@ -34,43 +34,63 @@ export default function HomePage() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-16">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-screen">
-        <div className="absolute inset-0">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      <section className="relative h-[80vh]">
+        <Image
+          src="/images/hero.jpg"
+          alt="MUWA JADE"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">MUWA JADE</h1>
+            <p className="text-xl md:text-2xl">자연 속 프라이빗 휴식</p>
+          </div>
         </div>
-        <div className="relative h-full flex flex-col justify-center items-center text-white text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            자연 속 프라이빗 휴식, MUWA JADE
-          </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            MUWA의 철학이 담긴 프리미엄 라이프스타일 공간
-          </p>
-          <div className="flex flex-col md:flex-row gap-4">
-            <Link 
-              href="/reservation" 
-              className="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-200"
-            >
-              지금 예약하기
-            </Link>
-            <Link 
-              href="#about" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-black"
-            >
-              브랜드 소개 보기
-            </Link>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">특별한 경험</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🏌️‍♂️</div>
+              <h3 className="text-xl font-bold mb-2">골프</h3>
+              <p className="text-gray-600">프라이빗 골프 클럽</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🏊‍♂️</div>
+              <h3 className="text-xl font-bold mb-2">수영장</h3>
+              <p className="text-gray-600">인피니티 풀</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🍷</div>
+              <h3 className="text-xl font-bold mb-2">와인</h3>
+              <p className="text-gray-600">와인 셀러</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-8">MUWA JADE 소개</h2>
+            <p className="text-gray-600 mb-8">
+              &quot;MUWA&quot;는 &quot;Mountain&quot;과 &quot;Water&quot;의 조합으로, 
+              산과 물이 어우러진 자연의 아름다움을 상징합니다. 
+              &quot;JADE&quot;는 귀중한 보석을 의미하며, 
+              우리의 프리미엄 서비스와 시설을 나타냅니다.
+            </p>
+            <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+              자세히 보기
+            </button>
           </div>
         </div>
       </section>
