@@ -2,13 +2,10 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 
 export default function HomePage() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const promotions = [
     {
       title: "오픈 기념 할인",
@@ -54,43 +51,46 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20">
+      <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">특별한 경험</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl mb-4">🏌️‍♂️</div>
               <h3 className="text-xl font-bold mb-2">골프</h3>
-              <p className="text-gray-600">프라이빗 골프 클럽</p>
+              <p className="text-gray-300">프라이빗 골프 클럽</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">🏊‍♂️</div>
               <h3 className="text-xl font-bold mb-2">수영장</h3>
-              <p className="text-gray-600">인피니티 풀</p>
+              <p className="text-gray-300">인피니티 풀</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">🍷</div>
               <h3 className="text-xl font-bold mb-2">와인</h3>
-              <p className="text-gray-600">와인 셀러</p>
+              <p className="text-gray-300">와인 셀러</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">MUWA JADE 소개</h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-300 mb-8">
               &quot;MUWA&quot;는 &quot;Mountain&quot;과 &quot;Water&quot;의 조합으로, 
               산과 물이 어우러진 자연의 아름다움을 상징합니다. 
               &quot;JADE&quot;는 귀중한 보석을 의미하며, 
               우리의 프리미엄 서비스와 시설을 나타냅니다.
             </p>
-            <button className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            <Link 
+              href="/brand" 
+              className="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors inline-block"
+            >
               자세히 보기
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -188,10 +188,9 @@ export default function HomePage() {
               <div className="p-4">
                 <h3 className="text-xl font-bold mb-2">주변 관광지</h3>
                 <p className="text-gray-300 mb-4">자연과 문화가 어우러진 여행지</p>
-                <Link href="#" className="text-white hover:underline">더 알아보기 →</Link>
+                <Link href="/location" className="text-white hover:underline">더 알아보기 →</Link>
               </div>
             </div>
-            {/* Add more lifestyle cards here */}
           </div>
         </div>
       </section>
@@ -259,7 +258,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {reviews.map((review, index) => (
               <div key={index} className="bg-gray-900 p-6 rounded-lg">
-                <p className="text-xl mb-4">"{review.text}"</p>
+                <p className="text-xl mb-4">&quot;{review.text}&quot;</p>
                 <p className="text-gray-300">- {review.author}</p>
               </div>
             ))}
