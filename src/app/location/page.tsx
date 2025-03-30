@@ -11,7 +11,7 @@ export default function LocationPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[40vh]">
+      <section className="relative h-[60vh]">
         <Image
           src="/images/location-hero.jpg"
           alt="MUWA JADE 위치"
@@ -20,8 +20,8 @@ export default function LocationPage() {
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">위치</h1>
-            <p className="text-xl md:text-2xl">제주도의 아름다운 자연 속에서</p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">위치 안내</h1>
+            <p className="text-xl md:text-2xl">자연과 함께하는 프라이빗 빌리지</p>
           </div>
         </div>
       </section>
@@ -30,95 +30,51 @@ export default function LocationPage() {
       <section className="py-20 bg-black text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">주소</h2>
-                <p className="text-gray-300 mb-6">
-                  제주특별자치도 제주시 구좌읍 행원로 123
-                </p>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">대중교통</h3>
-                    <p className="text-gray-300">제주국제공항에서 차량으로 약 30분</p>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">주차</h3>
-                    <p className="text-gray-300">지하 주차장 100대 수용 가능</p>
-                  </div>
-                </div>
-              </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image
-                  src="/images/location-map.jpg"
-                  alt="위치 지도"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+            <h2 className="text-3xl font-bold mb-8 text-center">MUWA JADE 위치</h2>
+            <div className="bg-gray-900 p-8 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4">주소</h3>
+              <p className="text-gray-300 mb-4">강원도 춘천시 남산면 경춘로 212-30 제이드팰리스 GC</p>
+              <p className="text-gray-300">2025년 준공 예정</p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Nearby Attractions */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-              <div className="order-2 md:order-1">
-                <h2 className="text-3xl font-bold mb-6">주변 관광지</h2>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">성산일출봉</h3>
-                    <p className="text-gray-300">차량으로 약 10분</p>
-                    <p className="text-gray-300">제주도의 대표적인 관광지</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">만장굴</h3>
-                    <p className="text-gray-300">차량으로 약 15분</p>
-                    <p className="text-gray-300">세계문화유산으로 지정된 용암동굴</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">우도</h3>
-                    <p className="text-gray-300">차량으로 약 20분 + 페리</p>
-                    <p className="text-gray-300">제주도의 작은 섬, 아름다운 해변</p>
-                  </div>
-                </div>
-              </div>
-              <div className="relative h-[400px] rounded-lg overflow-hidden order-1 md:order-2">
-                <Image
-                  src="/images/nearby-attractions.jpg"
-                  alt="주변 관광지"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+      {/* Transportation */}
+      <section className="py-20 bg-black text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">교통 안내</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">차량 이용</h3>
+              <p className="text-gray-300">서울 코엑스 기준 약 1시간 소요 (약 68km 거리)</p>
             </div>
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">대중교통 이용</h3>
+              <p className="text-gray-300">경춘선 ITX 이용</p>
+              <p className="text-gray-300">용산역 → 가평역 (약 1시간)</p>
+              <p className="text-gray-300">가평역 → 제이드팰리스 GC (택시 약 8분)</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Transportation */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="relative h-[400px] rounded-lg overflow-hidden">
-                <Image
-                  src="/images/transportation.jpg"
-                  alt="교통 정보"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-6">교통 정보</h2>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">제주국제공항</h3>
-                    <p className="text-gray-300">차량으로 약 30분 소요</p>
-                    <p className="text-gray-300">공항 픽업 서비스 제공</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">제주시내</h3>
-                    <p className="text-gray-300">차량으로 약 40분 소요</p>
-                    <p className="text-gray-300">시내 셔틀버스 운영</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">렌터카</h3>
-                    <p className="text-gray-300">공항에서 렌터카 이용 가능</p>
-                    <p className="text-gray-300">무료 주차 시설 제공</p>
-                  </div>
-                </div>
-              </div>
+      {/* Facilities */}
+      <section className="py-20 bg-black text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">주변 시설</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">제이드팰리스 골프클럽</h3>
+              <p className="text-gray-300">회원제 프라이빗 골프 클럽</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">프라이빗 빌라</h3>
+              <p className="text-gray-300">독립적인 공간의 프라이빗 빌라</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">커뮤니티 하우스</h3>
+              <p className="text-gray-300">와인 테마의 커뮤니티 공간</p>
             </div>
           </div>
         </div>
