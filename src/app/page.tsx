@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Navbar from '@/components/Navbar';
 
@@ -36,12 +35,12 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative h-[80vh]">
-        <Image
+        {/* <Image
           src="/images/hero.jpg"
           alt="MUWA JADE"
           fill
           className="object-cover"
-        />
+        /> */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">MUWA JADE</h1>
@@ -126,12 +125,12 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="relative h-80 rounded-lg overflow-hidden">
-              <Image
+              {/* <Image
                 src="/images/villa.jpg"
                 alt="VILLA 프라이빗 빌라"
                 fill
                 className="object-cover"
-              />
+              /> */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold mb-2">VILLA 프라이빗 빌라</h3>
@@ -140,12 +139,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden">
-              <Image
+              {/* <Image
                 src="/images/wellness.jpg"
                 alt="웰니스 시설"
                 fill
                 className="object-cover"
-              />
+              /> */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold mb-2">웰니스 시설</h3>
@@ -154,12 +153,12 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden">
-              <Image
+              {/* <Image
                 src="/images/dining.jpg"
                 alt="PDR / 다이닝 공간"
                 fill
                 className="object-cover"
-              />
+              /> */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold mb-2">PDR / 다이닝 공간</h3>
@@ -178,12 +177,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-gray-900 rounded-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
+                {/* <Image
                   src="/images/tourism.jpg"
                   alt="주변 관광지"
                   fill
                   className="object-cover"
-                />
+                /> */}
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-bold mb-2">주변 관광지</h3>
@@ -234,12 +233,12 @@ export default function HomePage() {
             {promotions.map((promo, index) => (
               <div key={index} className="bg-gray-900 rounded-lg overflow-hidden">
                 <div className="relative h-48">
-                  <Image
+                  {/* <Image
                     src={promo.image}
                     alt={promo.title}
                     fill
                     className="object-cover"
-                  />
+                  /> */}
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-bold mb-2">{promo.title}</h3>
